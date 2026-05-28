@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/f4c8bd5c-9cb7-43ad-8036-8b8a2305429a/resourceGroups/TI_Sistemas_Bersa/providers/Microsoft.Web/sites/PortalBersa",
+    "appService.deploySubpath": "."
+}

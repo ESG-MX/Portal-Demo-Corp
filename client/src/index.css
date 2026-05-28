@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Slate + Violet palette override ────────────────────────────────────── */
+/* Applied directly so they work regardless of PostCSS / Vite cache state   */
+
+/* Backgrounds */
+.bg-naranja-bersa, .bg-naranja-primary   { background-color: #7c3aed !important; }
+.bg-azul-bersa,    .bg-azul-primary      { background-color: #0f172a !important; }
+.bg-rojo-bersa,    .bg-rojo-primary      { background-color: #312e81 !important; }
+.bg-naranja-hover                        { background-color: #6d28d9 !important; }
+
+/* Text */
+.text-naranja-bersa, .text-naranja-primary { color: #7c3aed !important; }
+.text-azul-bersa,    .text-azul-primary    { color: #0f172a !important; }
+.text-rojo-bersa,    .text-rojo-primary    { color: #312e81 !important; }
+
+/* Borders */
+.border-naranja-bersa  { border-color: #7c3aed !important; }
+.border-azul-bersa     { border-color: #0f172a !important; }
+.border-rojo-bersa     { border-color: #312e81 !important; }
+
+/* Hover states */
+.hover\:bg-naranja-bersa:hover  { background-color: #7c3aed !important; }
+.hover\:bg-azul-bersa:hover     { background-color: #0f172a !important; }
+.hover\:text-naranja-bersa:hover{ color: #7c3aed !important; }
+
+/* Opacity variants — /10 /20 /30 /50 */
+.bg-naranja-bersa\/10  { background-color: rgb(124 58 237 / 0.10) !important; }
+.bg-naranja-bersa\/20  { background-color: rgb(124 58 237 / 0.20) !important; }
+.bg-naranja-bersa\/30  { background-color: rgb(124 58 237 / 0.30) !important; }
+.bg-naranja-bersa\/50  { background-color: rgb(124 58 237 / 0.50) !important; }
+.bg-azul-bersa\/5      { background-color: rgb(15  23 42  / 0.05) !important; }
+.bg-azul-bersa\/10     { background-color: rgb(15  23 42  / 0.10) !important; }
+.bg-azul-bersa\/20     { background-color: rgb(15  23 42  / 0.20) !important; }
+.bg-azul-bersa\/50     { background-color: rgb(15  23 42  / 0.50) !important; }
+.bg-rojo-bersa\/30     { background-color: rgb(49  46 129 / 0.30) !important; }
+
+.border-naranja-bersa\/20  { border-color: rgb(124 58 237 / 0.20) !important; }
+.border-naranja-bersa\/30  { border-color: rgb(124 58 237 / 0.30) !important; }
+.border-naranja-bersa\/50  { border-color: rgb(124 58 237 / 0.50) !important; }
+.border-azul-bersa\/20     { border-color: rgb(15  23 42  / 0.20) !important; }
+
+.ring-naranja-bersa\/20  { --tw-ring-color: rgb(124 58 237 / 0.20); }
+.ring-naranja-bersa\/30  { --tw-ring-color: rgb(124 58 237 / 0.30); }
+.ring-azul-bersa\/20     { --tw-ring-color: rgb(15  23 42  / 0.20); }
+
+.shadow-naranja-bersa\/20  { --tw-shadow-color: rgb(124 58 237 / 0.20); box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow); }
+.shadow-naranja-bersa\/30  { --tw-shadow-color: rgb(124 58 237 / 0.30); box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow); }
+
+.focus\:ring-naranja-bersa:focus     { --tw-ring-color: #7c3aed; }
+.focus\:ring-naranja-bersa\/50:focus { --tw-ring-color: rgb(124 58 237 / 0.50); }
+.focus\:border-naranja-bersa:focus   { border-color: #7c3aed !important; }
+/* ─────────────────────────────────────────────────────────────────────────── */

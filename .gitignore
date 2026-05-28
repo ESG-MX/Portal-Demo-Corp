@@ -1,0 +1,17 @@
+node_modules/
+client/node_modules/
+dist/
+client/dist/
+.env
+*.log
+logs/
+
+# Large build artifacts
+*.zip
+despliegue.zip
+
+# Temporary/leftover files
+current.yml
+previous.yml
+update_db.js
+server/setup_script.js

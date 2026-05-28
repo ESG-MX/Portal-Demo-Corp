@@ -1,0 +1,2 @@
+const express = require('express');const router = express.Router();const { validateUserWithGraph, authorize } = require('../middleware/auth');
+ router.get('/me', validateUserWithGraph, (req, res) => {    res.json({        name: req.user.name,        email: req.user.email,        role: req.user.role || 'Usuario',        office: req.user.verifiedOffice || 'Sin Oficina'    });});module.exports = router;

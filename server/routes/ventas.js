@@ -1,0 +1,13 @@
+const express = require('express');
+const router = express.Router();
+const ventasCont = require('../controllers/ventasCont');
+const { validateUserWithGraph, authorize } = require('../middleware/auth');
+router.get('/almacenes', validateUserWithGraph, ventasCont.getAlmacenes);
+router.get('/items/:whscode', validateUserWithGraph, ventasCont.getItemsByWhs);
+router.get('/relacion-diaria', validateUserWithGraph, authorize('mp'), ventasCont.getRelacionDiaria);
+router.post('/crear-pedido', validateUserWithGraph, ventasCont.crearPedido);
+router.get('/sap-orders', validateUserWithGraph, authorize('admin', 'mp'), ventasCont.getSapOrders);
+router.patch('/sap-orders/:id', validateUserWithGraph, authorize('admin', 'mp'), ventasCont.updateSapOrder);
+router.get('/historial', validateUserWithGraph, authorize('mp'), ventasCont.getHistorial);
+router.get('/reporte-salud', validateUserWithGraph, ventasCont.getReporteSalud);
+module.exports = router;

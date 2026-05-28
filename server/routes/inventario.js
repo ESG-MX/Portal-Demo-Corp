@@ -1,0 +1,2 @@
+const express = require('express');const router = express.Router();const { getInventarioData, guardarConteo, getReporteSalud } = require('../controllers/inventarioCont');const { validateUserWithGraph, authorize } = require('../middleware/auth');
+router.get('/', validateUserWithGraph, getInventarioData);router.get('/reporte-salud', validateUserWithGraph, getReporteSalud);router.post('/guardar', validateUserWithGraph, guardarConteo);module.exports = router;
